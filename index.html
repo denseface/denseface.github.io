@@ -81,19 +81,20 @@
                 <p>
                     The text-to-image (T2I) personalization diffusion model can generate images of the novel concept,
                     based on the text prompt. However,
-                    in the human face generation domain, existing T2I methods need the test-time fine-tuning, and
-                    generated images may fail to have a consistent
-                    identity at large pose-views. In this work, we propose a new T2I personalization diffusion model,
-                    which can generate face images with the
-                    consistent identity as the given reference subject, at arbitrary poses, based on the text prompt.
-                    Specifically, we introduce an identity
-                    adaptive layer to achieve high-fidelity, pose-controllable generation while maintaining the
+                    in the human face generation domain, existing T2I methods either require test-time fine-tuning, or
+                    fail to
+                    generate images that align well with the given text prompt. In this work, we propose a new T2I
+                    personalization diffusion model,
+                    called Dense-Face, which can generate face images with the
+                    consistent identity as the given reference subject, and align well with the given text prompt.
+                    Specifically, we introduce a pose-controllable
+                    adapter to achieve high-fidelity, pose-controllable generation while maintaining the
                     text-based editing ability of the pretrained
                     stable diffusion (SD). Additionally, we use internal features of the SD UNet to predict dense face
                     annotations, enabling the proposed method
                     to gain domain knowledge in the face generation. Empirically, our method achieves state-of-the-art
-                    or competitive generation performance in
-                    identity preservation, pose control, and image-text alignment.
+                    or competitive generation performance in image-text alignment,
+                    identity preservation, and pose control.
                 </p>
             </div>
         </div>
