@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DenseNet</title>
+    <title>DenseFace</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -23,57 +23,12 @@
     <div class="d-flex justify-content-between text-center w-100 flex-column align-items-center">
         <div class="hero container-fluid w-75 px-800">
             <h1>Dense-Face: Realistic Personalized Face Generation Model via Dense Annotation Prediction</h1>
-            <!-- <div class="d-flex justify-content-center">
-                <span class="author">
-                    <a href=https://qinghew.github.io/">Xiao Guo</a>
-                    <sup>1</sup>,
-                </span>
-                <span class="author">
-                    <a href=https://qinghew.github.io/">Manh Tran</a>
-                    <sup>1</sup>,
-                </span>
-                <span class="author">
-                    <a href=https://qinghew.github.io/">Manh Tran</a>
-                    <sup>1</sup>,
-                </span>
-                <span class="author">
-                    <a href=https://qinghew.github.io/">Xiaoming Liu</a>
-                    <sup>1</sup>,
-                </span>
-            </div> -->
-            <!-- <div>
-                <span>
-                    <sup>1</sup>
-                    <span>Michigan State University</span>
-                </span>,
-                <span>
-                    <sup>2</sup>
-                    <span>ZMO AI Inc</span>
-                </span>
-            </div>
-            <small>* Corresponding Author</small>
-            <div class="d-flex justify-content-center">
-                <a href="https://arxiv.org/abs/2401.15975" class="btn btn-dark rounded-pill mx-1">
-                    <i class="fa-brands fa-github"></i>
-                    <span>arXiv</span>
-                </a>
-                <a href="https://arxiv.org/abs/2401.15975" class="btn btn-dark rounded-pill mx-1">
-                    <i class="fa-brands fa-github"></i>
-                    <span>arXiv</span>
-                </a>
-            </div> -->
         </div>
         <br>
         <br>
-
         <div class="px-800 w-75">
             <!-- Images -->
             <img class="w-100 fill" src="./images/personalization.png" loading="lazy" alt="Gallery">
-
-            <!-- <p>Given a single input image, the proposed StableIdentity can generate diverse customized images in various
-                contexts. Notably, we present the learned identity combined with ControlNet and even injected into video
-                (ModelScopeT2V) and 3D (LucidDreamer) generation. We omit the placeholders of prompts such as "wearing
-                glasses" for brevity.</p> -->
 
             <h1>Abstract</h1>
 
@@ -100,6 +55,9 @@
         </div>
         <br>
         <br>
+        <hr style="max-width: 1400px;">
+
+        <h2>T2I Dense Face Annotation Dataset </h2>
         <div class="w-75 shadow-lg rounded-4 p-4 overflow-auto gallery">
             <!-- <div class="row">
                 <div class="column px-4" style="margin: auto;width: 25%;">
@@ -242,190 +200,305 @@
                 </div>
             </div>
             <hr> -->
-            <div class="row" style="overflow-x: auto;">
-                <div class="column px-4" style="margin: auto; width: 16%">
-                    <div class="row">
-                        <div class="col-8 px-0" style="margin: auto;">
-                            <img src="./images/image1.png" style="width: 100%;">
-                        </div>
-                        <div class="col-4 px-0" style="margin: auto;">
-                            <img src="./images/image2.png" style="width: 100%;">
-                            <img src="./images/image3.png" style="width: 100%;">
-                        </div>
-                    </div>
-                </div>
-                <div class="column px-4" style="margin: auto; width: 16%">
-                    <div class="row">
-                        <div class="col-8 px-0" style="margin: auto;">
-                            <img src="./images/image4.png" style="width: 100%;">
-                        </div>
-                        <div class="col-4 px-0" style="margin: auto;">
-                            <img src="./images/image5.png" style="width: 100%;">
-                            <img src="./images/image6.png" style="width: 100%;">
-                        </div>
-                    </div>
-                </div>
-                <div class="column px-4" style="margin: auto; width: 16%;">
-                    <div class="row">
-                        <div class="col-8 px-0" style="margin: auto;">
-                            <img src="./images/image7.png" style="width: 100%;">
-                        </div>
-                        <div class="col-4 px-0" style="margin: auto;">
-                            <img src="./images/image8.png" style="width: 100%;">
-                            <img src="./images/image9.png" style="width: 100%;">
-                        </div>
-                    </div>
-                </div>
-                <div class="column px-4" style="margin: auto; width: 16%;">
-                    <div class="row">
-                        <div class="col-8 px-0" style="margin: auto;">
-                            <img src="./images/image10.png" style="width: 100%;">
-                        </div>
-                        <div class="col-4 px-0" style="margin: auto;">
-                            <img src="./images/image11.png" style="width: 100%;">
-                            <img src="./images/image12.png" style="width: 100%;">
-                        </div>
-                    </div>
-                </div>
-                <div class="column px-4" style="margin: auto; width: 16%;">
-                    <div class="row">
-                        <div class="col-8 px-0" style="margin: auto;">
-                            <img src="./images/image13.png" style="width: 100%;">
-                        </div>
-                        <div class="col-4 px-0" style="margin: auto;">
-                            <img src="./images/image14.png" style="width: 100%;">
-                            <img src="./images/image15.png" style="width: 100%;">
-                        </div>
-                    </div>
-                </div>
-                <div class="column px-4" style="margin: auto; width: 16%;">
-                    <div class="row">
-                        <div class="col-8 px-0" style="margin: auto;">
-                            <img src="./images/image16.png" style="width: 100%;">
-                        </div>
-                        <div class="col-4 px-0" style="margin: auto;">
-                            <img src="./images/image17.png" style="width: 100%;">
-                            <img src="./images/image18.png" style="width: 100%;">
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="column px-4" style="margin: auto;width: 33%;">
-                    <div class="row">
-                        <div class="col-12 px-0" style="margin: auto;">
-                            <img src="./images/image1.png" style="width: 100%;">
-                        </div>
-                    </div>
-                </div>
-                <div class="column px-4" style="margin: auto;width: 33%;">
-                    <div class="row">
-                        <div class="col-12 px-0" style="margin: auto;">
-                            <img src="./images/image2.png" style="width: 100%;">
-                        </div>
-                    </div>
-                </div>
-                <div class="column px-4" style="margin: auto;width: 33%;">
-                    <div class="row">
-                        <div class="col-12 px-0" style="margin: auto;">
-                            <img src="./images/image3.png" style="width: 100%;">
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-
             <div class="row">
-                <div class="column px-4" style="margin: auto;width: 33%;">
-                    <p class="caption text-center">
-                        <i>
-                            aligned face
-                        </i>
+                <div style="width: 12%">
+                    <h5>Input image</h5>
+                </div>
+                <div style="width: 13%">
+                    <h5>Face Bounding Box</h5>
+                </div>
+                <div style="width: 13%">
+                    <h5>Dense Landmark</h5>
+                </div>
+                <div style="width: 13%">
+                    <h5>Pseudo Mask</h5>
+                </div>
+                <div style="width: 12%">
+                    <h5>Face parsing mask</h5>
+                </div>
+                <div style="width: 12%">
+                    <h5>Depth map(UV map z-axis)</h5>
+                </div>
+                <div style="width: 12%">
+                    <h5>UV map x-axis</h5>
+                </div>
+                <div style="width: 13%">
+                    <h5>UV map y-axis</h5>
+                </div>
+            </div>
+            <div class="row" style="overflow-x: auto;">
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image1.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image2.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image3.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image29.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image30.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image46.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image47.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image48.png" style="width: 100%;">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-6 d-flex flex-column justify-content-center">
+                    <p>
+                        blip2-2.7b(0.2835): a young boy in a suit and tie looks to the side<br>
+                        git-large-coco(0.2768): a young boy wearing a suit and tie.<br>
+                        blip2-flan-t5-xl(0.2751): a young boy in a suit and tie<br>
+                        blip-large(0.2571): a dressed boy in a suit and tie with a microphone<br>
+                        vit-gpt2(0.2418): a young man wearing a suit and tie<br>
+                        vit-swin(0.2353): A man in a suit and tie is looking at the camera.
                     </p>
                 </div>
-                <div class="column px-4" style="margin: auto;width: 33%;">
-                    <p class="caption text-center">
-                        <i>
-                            face bbox
-                        </i>
-                    </p>
-                </div>
-                <div class="column px-4" style="margin: auto;width: 33%;">
-                    <p class="caption text-center">
-                        <i>
-                            landmarks 0.0053
-                        </i>
-                    </p>
+                <div class="col-6 px-4" style="margin: auto; width: 50%">
+                    <img src="./images/image61.png" style="width: 100%;">
                 </div>
             </div>
             <hr>
 
             <div class="row" style="overflow-x: auto;">
-                <div class="column px-4" style="margin: auto; width: 16%">
-                    <div class="row">
-                        <div class="col-8 px-0" style="margin: auto;">
-                            <img src="./images/image19.png" style="width: 100%;">
-                        </div>
-                        <div class="col-4 px-0" style="margin: auto;">
-                            <img src="./images/image20.png" style="width: 100%;">
-                            <img src="./images/image21.png" style="width: 100%;">
-                        </div>
-                    </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image4.png" style="width: 100%;">
                 </div>
-                <div class="column px-4" style="margin: auto; width: 16%">
-                    <div class="row">
-                        <div class="col-8 px-0" style="margin: auto;">
-                            <img src="./images/image22.png" style="width: 100%;">
-                        </div>
-                        <div class="col-4 px-0" style="margin: auto;">
-                            <img src="./images/image23.png" style="width: 100%;">
-                            <img src="./images/image24.png" style="width: 100%;">
-                        </div>
-                    </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image5.png" style="width: 100%;">
                 </div>
-                <div class="column px-4" style="margin: auto; width: 16%;">
-                    <div class="row">
-                        <div class="col-8 px-0" style="margin: auto;">
-                            <img src="./images/image25.png" style="width: 100%;">
-                        </div>
-                        <div class="col-4 px-0" style="margin: auto;">
-                            <img src="./images/image26.png" style="width: 100%;">
-                            <img src="./images/image27.png" style="width: 100%;">
-                        </div>
-                    </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image6.png" style="width: 100%;">
                 </div>
-                <div class="column px-4" style="margin: auto; width: 16%;">
-                    <div class="row">
-                        <div class="col-8 px-0" style="margin: auto;">
-                            <img src="./images/image28.png" style="width: 100%;">
-                        </div>
-                        <div class="col-4 px-0" style="margin: auto;">
-                            <img src="./images/image29.png" style="width: 100%;">
-                            <img src="./images/image30.png" style="width: 100%;">
-                        </div>
-                    </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image20.png" style="width: 100%;">
                 </div>
-                <div class="column px-4" style="margin: auto; width: 16%;">
-                    <div class="row">
-                        <div class="col-8 px-0" style="margin: auto;">
-                            <img src="./images/image31.png" style="width: 100%;">
-                        </div>
-                        <div class="col-4 px-0" style="margin: auto;">
-                            <img src="./images/image32.png" style="width: 100%;">
-                            <img src="./images/image33.png" style="width: 100%;">
-                        </div>
-                    </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image21.png" style="width: 100%;">
                 </div>
-                <div class="column px-4" style="margin: auto; width: 16%;">
-                    <div class="row">
-                        <div class="col-8 px-0" style="margin: auto;">
-                            <img src="./images/image34.png" style="width: 100%;">
-                        </div>
-                        <div class="col-4 px-0" style="margin: auto;">
-                            <img src="./images/image35.png" style="width: 100%;">
-                            <img src="./images/image36.png" style="width: 100%;">
-                        </div>
-                    </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image37.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image38.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image39.png" style="width: 100%;">
                 </div>
             </div>
+            <br>
+            <div class="row">
+                <div class="col-6 d-flex flex-column justify-content-center">
+                    <p>
+                        blip2-flan-t5-xl(0.3104): a boy in glasses with his mouth open<br>
+                        blip-large(0.3012): arafed boy in a suit and glasses making a funny face<br>
+                        git-large-coco(0.2966): a young boy wearing glasses and a suit jacket.<br>
+                        blip2-2.7b(0.2891): a young boy with glasses and a blue shirt<br>
+                        blip-base(0.2445): a man with glasses and a tie on<br>
+                        vit-swin(0.2415): A man with glasses and a tie is smiling.<br>
+                        vit-gpt2(0.2384): a man wearing glasses and a scarf.
+                    </p>
+                </div>
+                <div class="column px-4" style="margin: auto; width: 50%">
+                    <img src="./images/image62.png" style="width: 100%;">
+                </div>
+            </div>
+            <hr>
+
+            <div class="row" style="overflow-x: auto;">
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image7.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image8.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image9.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image23.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image24.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image40.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image41.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image42.png" style="width: 100%;">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-6 d-flex flex-column justify-content-center">
+                    <p>
+                        git-large-coco(0.3060): a young boy wearing glasses and a blue shirt.<br>
+                        blip2-2.7b(0.3017): a young boy wearing glasses and a blue shirt<br>
+                        blip2-flan-t5-xl(0.2991): a boy wearing glasses and a tie<br>
+                        blip-large(0.2968): smiling boy wearing glasses and a blue shirt and tie<br>
+                        blip-base(0.2949): a boy wearing glasses and a blue shirt<br>
+                        vit-swin(0.2733): A young man wearing glasses and a tie.<br>
+                        vit-gpt2(0.2732): a young man wearing glasses and a tie.
+                    </p>
+                </div>
+                <div class="column px-4" style="margin: auto; width: 50%">
+                    <img src="./images/image63.png" style="width: 100%;">
+                </div>
+            </div>
+            <hr>
+
+            <div class="row" style="overflow-x: auto;">
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image10.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image11.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image12.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image26.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image27.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image43.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image44.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image45.png" style="width: 100%;">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-6 d-flex flex-column justify-content-center">
+                    <p>
+                        blip2-2.7b(0.2752): a young boy with a brown shirt on looks surprised<br>
+                        blip2-flan-t5-xl(0.2693): a boy in a brown shirt is staring at a picture<br>
+                        git-large-coco(0.2585): a young boy looks at the camera.<br>
+                        vit-swin(0.2353): A young boy is smiling and holding a cell phone.<br>
+                        blip-base(0.2275): a young boy is holding a remote control<br>
+                        blip-large(0.2201): there is a young boy that is holding a remote in his hand<br>
+                        vit-gpt2(0.2038): a young boy wearing a tie and smiling.
+                    </p>
+                </div>
+                <div class="column px-4" style="margin: auto; width: 50%">
+                    <img src="./images/image64.png" style="width: 100%;">
+                </div>
+            </div>
+            <hr>
+
+            <div class="row" style="overflow-x: auto;">
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image13.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image14.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image15.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image32.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image33.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image49.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image50.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image51.png" style="width: 100%;">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-6 d-flex flex-column justify-content-center">
+                    <p>
+                        blip2-2.7b(0.3335): a young boy with glasses and a black suit<br>
+                        blip-base(0.3184): a young boy wearing glasses and a suit<br>
+                        blip2-flan-t5-xl(0.3168): a young boy in glasses and a suit is making a funny face<br>
+                        vit-swin(0.3072): A young boy wearing glasses and a tie.<br>
+                        blip-large(0.3049): there is a young boy wearing glasses and a suit and tie<br>
+                        git-large-coco(0.2284): [ unused0 ] is the most handsome boy in the world<br>
+                        vit-gpt2(0.2256): a man wearing a suit and tie
+                    </p>
+                </div>
+                <div class="column px-4" style="margin: auto; width: 50%">
+                    <img src="./images/image65.png" style="width: 100%;">
+                </div>
+            </div>
+            <hr>
+
+            <div class="row" style="overflow-x: auto;">
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image16.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image17.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image18.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image35.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image36.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image52.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image53.png" style="width: 100%;">
+                </div>
+                <div class="column px-4" style="margin: auto; width: 12%">
+                    <img src="./images/image54.png" style="width: 100%;">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-6 d-flex flex-column justify-content-center">
+                    <p>
+                        vit-gpt2(0.3100): a young boy wearing a suit and tie<br>
+                        blip2-2.7b(0.3095): a young boy in a suit and tie looking at the camera<br>
+                        git-large-coco(0.3040): a boy in a suit and tie looks at the camera.<br>
+                        vit-swin(0.3030): A young boy in a suit and tie.<br>
+                        blip2-flan-t5-xl(0.3013): a young boy in a suit and tie<br>
+                        blip-large(0.2946): there is a young boy wearing a suit and tie<br>
+                    </p>
+                </div>
+                <div class="column px-4" style="margin: auto; width: 50%">
+                    <img src="./images/image66.png" style="width: 100%;">
+                </div>
+            </div>
+            <hr>
+
+
+
         </div>
+        <br>
+
         <hr style="max-width: 1400px;">
         <!-- <div class="d-flex w-100 justify-content-center">
             <div class="w-75 text-start">
