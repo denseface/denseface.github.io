@@ -57,7 +57,78 @@
         <br>
         <hr style="max-width: 1400px;">
 
-        <h2>T2I Dense Face Annotation Dataset </h2>
+
+
+        <div class="px-800 w-75">
+            <div>
+                <img class="w-100 fill" src="./images/visualization1.png" loading="lazy" alt="Gallery">
+                <p>
+                    Our proposed Dense-Face contains additional components, including a pose
+                    branch and PC-adapter, on the top of the pre-trained SD. These two components
+                    enable Dense-Face to have two generation modes: text-editing mode and face-generation
+                    mode. These two modes are jointly used via the latent space blending for
+                    the personalized generation. For example, given one of reference subject images, the
+                    text-editing mode generates a base image, and face-generation mode updates the face
+                    region for the identity-preservation in the final result.Dense-Face in face-generation
+                    mode generates realistic face images at different pose views.
+                </p>
+            </div>
+            <br>
+            <br>
+
+            <div>
+                <img class="w-100 fill" src="./images/visualization2.png" loading="lazy" alt="Gallery">
+                <p>
+                    We propose Dense-Face for personalized image generation, which introduces additional
+                    components, such as a pose-controllable (PC) adapter, pose branch (i.e., εpose) and
+                    annotation prediction module (i.e., εdense) on the top of the pre-trained T2I-SD. The
+                    input includes captions, head pose and reference image (i.e., Ipose and Iid). The out-
+                    put includes generated faces (Itar.) and dense face annotations (e.g., face depths (D),
+                    pseudo masks (P), and landmarks (L)). We only train εpose, εdense and the PC adapter
+                    in training and freeze the pre-trained SD. The PC-adapter (w′q , w′v , and w′v ) modifies
+                    cross attention module (wq , wv , and wk ) forward propagation, from fout (orange dash
+                    line) to f ′
+                    out (red solid line). εdense utilizes the internal UNet features (i.e., fdense) for
+                    predicting dense face annotations.
+                </p>
+            </div>
+            <br>
+            <br>
+
+            <div>
+                <h2>Videos</h2>
+                <video width="800" height="450" controls="controls">
+                    <source src="images/Demo_2.mp4" type="video/mp4">
+                    Your browser does not support HTML-5.
+                </video>
+            </div>
+            <br>
+            <br>
+
+            <div>
+                <img class="w-100 fill" src="./images/visualization3.png" loading="lazy" alt="Gallery">
+                <p>
+                    Dense-Face can place subjects in diverse contexts with changed attributes, such
+                    as hair color and clothes.
+                </p>
+            </div>
+            <br>
+            <br>
+
+            <div>
+                <img class="w-100 fill" src="./images/visualization4.png" loading="lazy" alt="Gallery">
+                <p>
+                    Additional comparisons among different personalized generation methods. Our
+                    proposed Dense-Face generates images with a consistent identity with the reference
+                    image, which can even be an old photo
+                </p>
+            </div>
+            <br>
+            <br>
+
+        </div>
+
+        <h2>T2I-Dense-Face Dataset </h2>
         <div class="w-75 shadow-lg rounded-4 p-4 overflow-auto gallery">
             <!-- <div class="row">
                 <div class="column px-4" style="margin: auto;width: 25%;">
@@ -226,7 +297,7 @@
                     <h5>UV map y-axis</h5>
                 </div>
             </div>
-            <div class="row" style="overflow-x: auto;">
+            <!-- <div class="row" style="overflow-x: auto;">
                 <div class="column px-4" style="margin: auto; width: 12%">
                     <img src="./images/image1.png" style="width: 100%;">
                 </div>
@@ -268,9 +339,9 @@
                     <img src="./images/image61.png" style="width: 100%;">
                 </div>
             </div>
-            <hr>
+            <hr> -->
 
-            <div class="row" style="overflow-x: auto;">
+            <!-- <div class="row" style="overflow-x: auto;">
                 <div class="column px-4" style="margin: auto; width: 12%">
                     <img src="./images/image4.png" style="width: 100%;">
                 </div>
@@ -313,7 +384,7 @@
                     <img src="./images/image62.png" style="width: 100%;">
                 </div>
             </div>
-            <hr>
+            <hr> -->
 
             <div class="row" style="overflow-x: auto;">
                 <div class="column px-4" style="margin: auto; width: 12%">
@@ -450,7 +521,7 @@
             </div>
             <hr>
 
-            <div class="row" style="overflow-x: auto;">
+            <!-- <div class="row" style="overflow-x: auto;">
                 <div class="column px-4" style="margin: auto; width: 12%">
                     <img src="./images/image16.png" style="width: 100%;">
                 </div>
@@ -492,14 +563,49 @@
                     <img src="./images/image66.png" style="width: 100%;">
                 </div>
             </div>
-            <hr>
-
+            <hr> -->
 
 
         </div>
-        <br>
 
+
+
+        <br>
         <hr style="max-width: 1400px;">
+
+        <div class="px-800 w-75">
+            <div>
+                <img class="w-100 fill" src="./images/visualization5.png" loading="lazy" alt="Gallery">
+                <p>
+                    Additional visualizations on the dense annotation prediction. The proposed
+                    Dense-Face can generate high-fidelity identity-preserved images and corresponding an-
+                    notations (e.g., depth image, pseudo mask and landmarks). Generated images can be
+                    at large pose-views.
+                </p>
+            </div>
+            <br>
+            <br>
+
+            <div>
+                <img class="w-100 fill" src="./images/visualization6.png" loading="lazy" alt="Gallery">
+                <p>
+                    Additional visualizations on different subject stylizations.
+                </p>
+            </div>
+            <br>
+            <br>
+
+            <div>
+                <img class="w-100 fill" src="./images/visualization7.png" loading="lazy" alt="Gallery">
+                <p>
+                    Additional Face Swapping results from the proposed method. Dense-Face
+                    achieves the comparable identity preservation as the previous work.
+                </p>
+            </div>
+            <br>
+            <br>
+
+        </div>
         <!-- <div class="d-flex w-100 justify-content-center">
             <div class="w-75 text-start">
                 <h2>Citation</h2>
