@@ -63,14 +63,16 @@
             <div>
                 <img class="w-100 fill" src="./images/visualization1.png" loading="lazy" alt="Gallery">
                 <p>
-                    Our proposed Dense-Face contains additional components, including a pose
-                    branch and PC-adapter, on the top of the pre-trained SD. These two components
-                    enable Dense-Face to have two generation modes: text-editing mode and face-generation
-                    mode. These two modes are jointly used via the latent space blending for
-                    the personalized generation. For example, given one of reference subject images, the
-                    text-editing mode generates a base image, and face-generation mode updates the face
-                    region for the identity-preservation in the final result.Dense-Face in face-generation
-                    mode generates realistic face images at different pose views.
+                    <strong>Upper figure:</strong> our proposed Dense-Face contains additional components, including a
+                    pose branch and
+                    PC-adapter, on the top of the pre-trained SD. These two components enable Dense-Face to have two
+                    generation modes: text-editing mode and face-generation mode. These two modes are jointly used via
+                    the latent space blending for the personalized generation. For example, given one of reference
+                    subject images, the text-editing mode generates a base image, and face-generation mode updates the
+                    face region for the identity-preservation in the final result.<br>
+                    <strong>Lower figure:</strong> Dense-Face in face-generation mode generates realistic face images at
+                    different pose
+                    views.
                 </p>
             </div>
             <br>
@@ -79,24 +81,24 @@
             <div>
                 <img class="w-100 fill" src="./images/visualization2.png" loading="lazy" alt="Gallery">
                 <p>
-                    We propose Dense-Face for personalized image generation, which introduces additional
-                    components, such as a pose-controllable (PC) adapter, pose branch (i.e., εpose) and
-                    annotation prediction module (i.e., εdense) on the top of the pre-trained T2I-SD. The
-                    input includes captions, head pose and reference image (i.e., Ipose and Iid). The out-
-                    put includes generated faces (Itar.) and dense face annotations (e.g., face depths (D),
-                    pseudo masks (P), and landmarks (L)). We only train εpose, εdense and the PC adapter
-                    in training and freeze the pre-trained SD. The PC-adapter (w′q , w′v , and w′v ) modifies
-                    cross attention module (wq , wv , and wk ) forward propagation, from fout (orange dash
-                    line) to f ′
-                    out (red solid line). εdense utilizes the internal UNet features (i.e., fdense) for
-                    predicting dense face annotations.
+                    <strong>Left:</strong> We propose Dense-Face for personalized image generation, which introduces
+                    additional
+                    components, such as a pose-controllable (PC) adapter, pose branch (i.e., εpose) and annotation
+                    prediction module (i.e., εdense) on the top of the pre-trained T2I-SD. The input includes captions,
+                    head pose and reference image (i.e., Ipose and Iid). The out- put includes generated faces (Itar.)
+                    and dense face annotations (e.g., face depths (D), pseudo masks (P), and landmarks (L)). We only
+                    train εpose, εdense and the PC adapter in training and freeze the pre-trained SD.<br>
+                    <strong>Right:</strong> The PC-adapter (w′q , w′v , and w′v ) modifies cross attention module (wq ,
+                    wv , and wk )
+                    forward propagation, from fout (orange dash line) to f ′ out (red solid line). εdense utilizes the
+                    internal UNet features (i.e., fdense) for predicting dense face annotations.
                 </p>
             </div>
             <br>
             <br>
 
             <div>
-                <h2>Videos</h2>
+                <h2>Demo</h2>
                 <video width="800" height="450" controls="controls">
                     <source src="images/Demo_2.mp4" type="video/mp4">
                     Your browser does not support HTML-5.
