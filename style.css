@@ -58,3 +58,9 @@
 p {
     font-size: 14px;
   }
+
+a {
+    color: #224b8d;
+    font-weight: 300;
+    font-size: 24px;
+}
